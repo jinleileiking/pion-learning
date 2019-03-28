@@ -2,6 +2,8 @@
 
 ## client hello
 
+createConn -> c.startHandshakeOutbound -> case <-c.workerTicker.C:
+
 ```
 0  0x00000000006c629d in github.com/pions/dtls.clientFlightHandler
    at /home/jinlei1/ksyun/src/github.com/pions/dtls/client_handlers.go:224
